@@ -1,0 +1,16 @@
+# ------------------------------------------------------------------------
+# Configuración personalizada para K&R, indentación 4 espacios,
+# permitir funciones/ciclos/if cortos en una línea y ternarios inline
+# ------------------------------------------------------------------------
+BasedOnStyle: LLVM            # se parte de LLVM (puedes cambiar a Google/LLVM/LLVM, LLVM suele ser más cercana a K&R)
+IndentWidth: 4                # 4 espacios para la indentación
+TabWidth: 4                   # ancho de tabulación (aunque no usaremos tabs)
+UseTab: Never                 # nunca usar tabs, solo espacios
+BreakBeforeBraces: Attach     # estilo K&R (abre llave en la misma línea)
+AllowShortIfStatementsOnASingleLine: true      # if cortos van en una línea
+AllowShortLoopsOnASingleLine: true             # for/while cortos en una línea
+AllowShortFunctionsOnASingleLine: Inline       # funciones muy cortas en una sola línea
+BreakBeforeTernaryOperators: false             # ternario inline, no forzar salto
+# Opcionalmente puedes ajustar según necesites:
+AllowShortCaseLabelsOnASingleLine: true        # case corto en una línea
+ColumnLimit: 0   

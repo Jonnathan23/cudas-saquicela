@@ -1,0 +1,6 @@
+.vscode
+Makefile
+CMakeLists.txt
+build/
+*.bin
+*.mp4
